@@ -1,0 +1,416 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   reset css
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+html,
+body {
+    font-family: 'Bruno Ace SC', cursive;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff;
+}
+
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+h1 {
+    color: #00FFA3;
+    font-size: 128px;
+    text-align: 128px;
+    align-self: end;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.align-items-start {
+    align-items: flex-start;
+}
+
+.navbar {
+    height: 88px;
+    background-color: #000;
+}
+
+.nav {
+    height: 100%;
+
+    .nav-item {
+        display: inline-block;
+        width: 306px;
+        margin: auto;
+        margin-right: 61px;
+        text-align: left;
+        color: #fff;
+
+        &:last-child {
+            text-align: right;
+            margin-right: 0;
+        }
+    }
+}
+
+.header {
+    padding: 72px 0;
+    background-color: #000;
+
+    .header-img {
+        height: 848px;
+        width: 636px;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 636px;
+        height: 528px;
+        margin-left: 24px;
+    }
+
+    p {
+        font-size: 64px;
+        white-space: pre-line;
+
+    }
+
+    button {
+        width: 185px;
+        padding: 12px 24px;
+        border-radius: 32px;
+        align-self: end;
+    }
+    a {
+        align-self: end;
+        padding: 12px 24px;
+        color: #000;
+        background-color: #fff;
+        border-radius: 32px;
+        img {
+            height: auto;
+        }
+    }
+}
+
+.introduction {
+    padding: 160px 0;
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+    background-size: cover;
+    .section-left {
+        width: 526px;
+        height: 442px;
+    
+        .title {
+            font-size: 64px;
+        }
+    
+        .text {
+            margin-top: 36px;
+            font-size: 24px;
+        }
+    
+        .content-imgs {
+            width: 128px;
+            justify-content: space-between;
+            margin-top: 32px;
+    
+            img {
+                height: 98px;
+            }
+        }
+    }
+    
+    .section-right {
+        width: 746px;
+        img {
+            height: 600px;
+            margin-right: 24px;
+    
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+.about-me {
+    padding: 160px 0;
+    background-color: #fff;
+    color: #000;
+
+    .skill-group {
+        width: 636px;
+        height: 328px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .skill-item {
+        box-sizing: border-box;
+        padding: 16px;
+        width: 306px;
+        height: 148px;
+        border: 1px solid #e3e3e3;
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+
+    }
+
+    .card {
+        width: 526px;
+        margin-left: 134px;
+
+        .title {
+            font-size: 64px;
+        }
+
+        .text {
+            margin-top: 36px;
+            font-size: 24px;
+        }
+    }
+}
+
+.contact-me {
+    padding: 96px 0;
+    background-image: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+
+    h2 {
+        font-size: 64px;
+        margin-right: auto;
+    }
+
+    .list-item {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 16px 3px #9094FFE5;
+            border-radius: 40px;
+        }
+
+        img {
+            height: 162px;
+            width: 162px;
+        }
+    }
+
+}
+
+.project {
+    display: flex;
+    flex-flow: column;
+    padding: 160px 0;
+    background-color: #fff;
+    color: #000;
+
+    .title {
+        width: 746px;
+        margin-left: auto;
+        margin-bottom: 16px;
+    }
+
+    .section-left {
+        height: 530px;
+        width: 416px;
+        margin-right: 24px;
+    }
+
+    .section-right {
+        width: 856px;
+    }
+
+    .top {
+        height: 196px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: start;
+        margin-left: 24px;
+        .text {
+            margin-bottom: 76px;
+        }
+
+        a {
+            padding: 12px 24px;
+            color: #fff;
+            background-color: #000;
+            border-radius: 32px;
+
+            img {
+                height: auto;
+                margin-left: 4px;
+            }
+        }
+    }
+
+    .bottom {
+        justify-content: space-between;
+        height: 306px;
+        margin-top: 28px;
+    }
+}
+
+.footer {
+    height: 104px;
+}

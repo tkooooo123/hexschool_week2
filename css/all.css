@@ -1,0 +1,380 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   reset css
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  font-family: "Bruno Ace SC", cursive;
+  line-height: 1.5;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+h1 {
+  color: #00FFA3;
+  font-size: 128px;
+  text-align: 128px;
+  align-self: end;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.navbar {
+  height: 88px;
+  background-color: #000;
+}
+
+.nav {
+  height: 100%;
+}
+.nav .nav-item {
+  display: inline-block;
+  width: 306px;
+  margin: auto;
+  margin-right: 61px;
+  text-align: left;
+  color: #fff;
+}
+.nav .nav-item:last-child {
+  text-align: right;
+  margin-right: 0;
+}
+
+.header {
+  padding: 72px 0;
+  background-color: #000;
+}
+.header .header-img {
+  height: 848px;
+  width: 636px;
+}
+.header .content {
+  flex-direction: column;
+  width: 636px;
+  height: 528px;
+  margin-left: 24px;
+}
+.header p {
+  font-size: 64px;
+  white-space: pre-line;
+}
+.header button {
+  width: 185px;
+  padding: 12px 24px;
+  border-radius: 32px;
+  align-self: end;
+}
+.header a {
+  align-self: end;
+  padding: 12px 24px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 32px;
+}
+.header a img {
+  height: auto;
+}
+
+.introduction {
+  padding: 160px 0;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true");
+  background-size: cover;
+}
+.introduction .section-left {
+  width: 526px;
+  height: 442px;
+}
+.introduction .section-left .title {
+  font-size: 64px;
+}
+.introduction .section-left .text {
+  margin-top: 36px;
+  font-size: 24px;
+}
+.introduction .section-left .content-imgs {
+  width: 128px;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.introduction .section-left .content-imgs img {
+  height: 98px;
+}
+.introduction .section-right {
+  width: 746px;
+}
+.introduction .section-right img {
+  height: 600px;
+  margin-right: 24px;
+}
+.introduction .section-right img:last-child {
+  margin-right: 0;
+}
+
+.about-me {
+  padding: 160px 0;
+  background-color: #fff;
+  color: #000;
+}
+.about-me .skill-group {
+  width: 636px;
+  height: 328px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.about-me .skill-item {
+  box-sizing: border-box;
+  padding: 16px;
+  width: 306px;
+  height: 148px;
+  border: 1px solid #e3e3e3;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.08);
+}
+.about-me .card {
+  width: 526px;
+  margin-left: 134px;
+}
+.about-me .card .title {
+  font-size: 64px;
+}
+.about-me .card .text {
+  margin-top: 36px;
+  font-size: 24px;
+}
+
+.contact-me {
+  padding: 96px 0;
+  background-image: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%);
+}
+.contact-me h2 {
+  font-size: 64px;
+  margin-right: auto;
+}
+.contact-me .list-item {
+  margin-right: 20px;
+}
+.contact-me .list-item:last-child {
+  margin-right: 0;
+}
+.contact-me .list-item:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.8980392157);
+  border-radius: 40px;
+}
+.contact-me .list-item img {
+  height: 162px;
+  width: 162px;
+}
+
+.project {
+  display: flex;
+  flex-flow: column;
+  padding: 160px 0;
+  background-color: #fff;
+  color: #000;
+}
+.project .title {
+  width: 746px;
+  margin-left: auto;
+  margin-bottom: 16px;
+}
+.project .section-left {
+  height: 530px;
+  width: 416px;
+  margin-right: 24px;
+}
+.project .section-right {
+  width: 856px;
+}
+.project .top {
+  height: 196px;
+}
+.project .top-content {
+  flex-direction: column;
+  align-items: start;
+  margin-left: 24px;
+}
+.project .top-content .text {
+  margin-bottom: 76px;
+}
+.project .top-content a {
+  padding: 12px 24px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 32px;
+}
+.project .top-content a img {
+  height: auto;
+  margin-left: 4px;
+}
+.project .bottom {
+  justify-content: space-between;
+  height: 306px;
+  margin-top: 28px;
+}
+
+.footer {
+  height: 104px;
+}/*# sourceMappingURL=all.css.map */
